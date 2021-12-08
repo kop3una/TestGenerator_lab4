@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace TestGeneratorLib.IO
 {
-    public class AsyncFileReader
+    public class AsyncFileReader : IAsyncReader
     {
         public async Task<string> ReadTextAsync(string path)
         {

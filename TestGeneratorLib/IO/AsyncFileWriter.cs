@@ -9,7 +9,7 @@ namespace TestGeneratorLib.IO
     {
         protected string directory;
 
-        public async Task WriteTextAsync(PathToFile pathToFile)
+        public async Task WriteTextAsync(PathFile pathToFile)
         {
             if (pathToFile == null)
             {

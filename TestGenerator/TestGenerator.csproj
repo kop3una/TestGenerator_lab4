@@ -45,9 +45,17 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestClasses\ConsoleOutput.cs" />
+    <Compile Include="TestClasses\FooBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestGeneratorLib\TestGeneratorLib.csproj">
+      <Project>{e493c5ac-bbaf-478b-a95e-725adbe264ca}</Project>
+      <Name>TestGeneratorLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

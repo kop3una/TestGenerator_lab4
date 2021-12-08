@@ -9,6 +9,6 @@ namespace TestGeneratorLib.IO
 {
     public interface IAsyncWriter
     {
-        Task WriteTextAsync(PathToFile pathToFile);
+        Task WriteTextAsync(PathFile pathToFile);
     }
 }

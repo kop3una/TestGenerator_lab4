@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TestGeneratorLib.CodeAnalazer;
 using TestGeneratorLib.IO;
+using TestGeneratorLib.TemplatesGenerator;
 
 namespace TestGeneratorLib
 {
@@ -95,7 +97,7 @@ namespace TestGeneratorLib
             reader = new AsyncFileReader();
             writer = new AsyncFileWriter();
             readPaths = new List<string>();
-            templateGenerator = new TemplateGenerator(new CodeAnalyzer());
+            templateGenerator = new TemplateGenerator(new CodeAnalazyer());
         }
     }
 }
